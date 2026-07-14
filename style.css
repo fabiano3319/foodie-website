@@ -450,14 +450,12 @@ footer .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
-    border: 1px solid blue;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 footer .grid-container .col1 {
-    border: 1px solid white;
     width: 436px;
     height: 200px;
-    border: 1px solid red;
 }
 footer h4 {
     font-size: 36px;
@@ -472,13 +470,28 @@ footer .grid-container .col2 p {
     font-weight: normal;
 }
 footer h5 {
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 footer .card_title {
     font-family: 'Grand Hotel', cursive;
     font-weight: normal;
 }
 footer .grid-container .col {
-    border: 1px solid white;
     height: 200px;
+}
+footer .social-network {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer article.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer article.service {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
