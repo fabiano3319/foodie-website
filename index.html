@@ -1,338 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div class="wrapper">
-            <div class="navbar">
-                <div class="card_logo">
-                    <img src="./img/logo_foodie.png" alt="logo_foodie">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Promo</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="card_text">
-                <h1 class="card_title">Delicious</h1>
-                <p class="card_desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Similique, optio vero! Magnam, magni enim.
-                </p>
-                <button>ORDER NOW</button>
-            </div>
-        </div> 
+      <div class="wrapper">
+        <div class="navbar">
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="card_logo">
+            <img src="./img/logo_foodie.png" alt="logo_foodie" />
+          </div>
+          <nav id="menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Promo</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card_text">
+          <h1 class="card_title">Delicious</h1>
+          <p class="card_desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Similique, optio vero! Magnam, magni enim.
+          </p>
+          <button>ORDER NOW</button>
+        </div>
+      </div>
     </header>
     <main>
-        <section id="section_one">
-            <div class="wrapper">
-                <div class="container">
-                    <h1 class="card_title">Popular</h1>
-                    <p class="card_desc_one">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi- <br>vamus lacinia odio vitae vestibulum vestibulum. 
-                    </p>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/card_img1.png" alt="">
-                            </div>
-                            <div class="card_text">
-                                <h3 class="card_title">Spicy Pasta</h3>
-                                <p class="card_desc_two">
-                                    Lorem ipsum dolor sit amet con- <br>sectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/card_img2.png" alt="">
-                            </div>
-                            <div class="card_text">
-                                <h3 class="card_title">Vegetable Pasta</h3>
-                                <p class="card_desc_two">
-                                    Lorem ipsum dolor sit amet con- <br>sectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/card_img3.png" alt="">
-                            </div>
-                            <div class="card_text">
-                                <h3 class="card_title">Beef Pasta</h3>
-                                <p class="card_desc_two">
-                                    Lorem ipsum dolor sit amet con- <br>sectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+      <section id="section_one">
+        <div class="wrapper">
+          <div class="container">
+            <h1 class="card_title">Popular</h1>
+            <p class="card_desc_one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-
+              <br />vamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <div class="card_container">
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/card_img1.png" alt="" />
                 </div>
-            </div>
-        </section>
-        <section id="section_two">
-            <div class="wrapper">
-                <div class="container">
-                    <h1 class="card_title">Our Statistic</h1>
-                    <p class="card_desc_one">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi- <br>vamus lacinia odio vitae vestibulum vestibulum. 
-                    </p>
-                    <div class="card_container">
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/img_cercle.png" alt="">
-                                <div class="card_desc">
-                                    <p class="desc_one">153</p>
-                                    <p class="desc_two">Menu</p>    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/img_cercle.png" alt="">
-                                 <div class="card_desc">
-                                    <p class="desc_one">3.4K</p>
-                                    <p class="desc_two">Store</p> 
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_img">
-                                <img src="./img/img_cercle.png" alt="">
-                                <div class="card_desc">
-                                    <p class="desc_one">32</p>
-                                    <p class="desc_two">Country</p> 
-                                </div>  
-                            </div> 
-                        </div>
-                    </div>
+                <div class="card_text">
+                  <h3 class="card_title">Spicy Pasta</h3>
+                  <p class="card_desc_two">
+                    Lorem ipsum dolor sit amet con- <br />sectetur adipisicing
+                    elit.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section id="section_three">
-            <div class="wrapper">
-                <div class="container">
-                    <h1 class="card_title">Our Menu</h1>
-                    <p class="card_desc_one">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi- <br>vamus lacinia odio vitae vestibulum vestibulum. 
-                    </p>
-                    <div class="card_container">
-                        <div class="card_container_one">
-                            <div class="card">
-                                <div class="card_img">
-                                    <img src="./img/pasta.png" alt="">
-                                </div>
-                                <div class="card_text">
-                                    <h3 class="card_title">Pasta</h3>
-                                    <p class="card_desc">
-                                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Expedita provident alias <br> sit, blanditiis placeat eius hic ad quas mol <br>
-                                        tiae ratione! Quo, corrupti praesentium.
-                                    </p>
-                                </div>
-                            </div>
-                           <div class="card">
-                                <div class="card_img">
-                                    <img src="./img/Carbonara.png" alt="">
-                                </div>
-                                <div class="card_text">
-                                    <h3 class="card_title">Carbonara</h3>
-                                    <p class="card_desc">
-                                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Expedita provident alias <br> sit, blanditiis placeat eius hic ad quas mol <br>
-                                        tiae ratione! Quo, corrupti praesentium.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card_container_two">
-                            <div class="card">
-                                <div class="card_img">
-                                    <img src="./img/Mie-Ciyam.png" alt="">
-                                </div>
-                                <div class="card_text">
-                                    <h3 class="card_title">Mie Ciyam</h3>
-                                    <p class="card_desc">
-                                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Expedita provident alias <br> sit, blanditiis placeat eius hic ad quas mol <br>
-                                        tiae ratione! Quo, corrupti praesentium.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card_four">
-                                <div class="card_img">
-                                    <img src="./img/Pecel Lele.png" alt="">
-                                </div>
-                                <div class="card_text">
-                                    <h3 class="card_title">Pecel Lele</h3>
-                                    <p class="card_desc">
-                                        Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Expedita provident alias <br> sit, blanditiis placeat eius hic ad quas mol <br>
-                                        tiae ratione! Quo, corrupti praesentium.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/card_img2.png" alt="" />
                 </div>
+                <div class="card_text">
+                  <h3 class="card_title">Vegetable Pasta</h3>
+                  <p class="card_desc_two">
+                    Lorem ipsum dolor sit amet con- <br />sectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/card_img3.png" alt="" />
+                </div>
+                <div class="card_text">
+                  <h3 class="card_title">Beef Pasta</h3>
+                  <p class="card_desc_two">
+                    Lorem ipsum dolor sit amet con- <br />sectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <section id="section_four">
-            <div class="container">
-                <div class="card_img"></div>
-                <div class="card_body">
-                    <h2 class="card_title">Delicious Pasta</h2>
+          </div>
+        </div>
+      </section>
+      <section id="section_two">
+        <div class="wrapper">
+          <div class="container">
+            <h1 class="card_title">Our Statistic</h1>
+            <p class="card_desc_one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-
+              <br />vamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <div class="card_container">
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/img_cercle.png" alt="" />
+                  <div class="card_desc">
+                    <p class="desc_one">153</p>
+                    <p class="desc_two">Menu</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/img_cercle.png" alt="" />
+                  <div class="card_desc">
+                    <p class="desc_one">3.4K</p>
+                    <p class="desc_two">Store</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img/img_cercle.png" alt="" />
+                  <div class="card_desc">
+                    <p class="desc_one">32</p>
+                    <p class="desc_two">Country</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_three">
+        <div class="wrapper">
+          <div class="container">
+            <h1 class="card_title">Our Menu</h1>
+            <p class="card_desc_one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-
+              <br />vamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <div class="card_container">
+              <div class="card_container_one">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="./img/pasta.png" alt="" />
+                  </div>
+                  <div class="card_text">
+                    <h3 class="card_title">Pasta</h3>
                     <p class="card_desc">
-                        Lorem ipsum dolor sit amet, consectetur <br>
-                        adipisicing elit. Vivamus lacinia odio vitae <br>
-                        vestibulum vestibulum.
+                      Lorem ipsum dolor sit amet consectetur <br />adipisicing
+                      elit. Expedita provident alias <br />
+                      sit, blanditiis placeat eius hic ad quas mol <br />
+                      tiae ratione! Quo, corrupti praesentium.
                     </p>
-                    <button>ORDER NOW</button>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section id="section_five">
-            <div class="wrapper">
-                <div class="container">
-                    <h2 class="card_title">Package Menu</h2>
-                    <p class="card_desc_one">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi- <br>vamus lacinia odio vitae vestibulum vestibulum. 
-                    </p>
-                    <div class="card_container">
-                        <div class="card">
-                            <img src="./img/pasta+ice-tea.png" alt="">
-                            <div class="card_text">
-                                <h3 class="card_title">Pasta + Ice Tea</h3>
-                                <p class="card_desc">
-                                    Lorem ipsum dolor sit amet, con- <br>sectetur adipiscing elit.
-                                </p>
-                            </div>
-                            <button class="price">$34.00</button>
-                        </div>
-                        <div class="card">
-                            <img src="./img/carbonara&pasta.png" alt="">
-                            <div class="card_text_two">
-                                <h3 class="card_title">Carbonara & Pasta</h3>
-                                <p class="card_desc">
-                                    Lorem ipsum dolor sit amet, con- <br>sectetur adipiscing elit.
-                                </p>
-                            </div>
-                            <button class="price">$34.00</button>
-                        </div>
-                        <div class="card">
-                            <img src="./img/MieCiyamPangsit.png" alt="">
-                            <div class="card_text">
-                                <h3 class="card_title">Mie Ciyam Pangsit</h3>
-                                <p class="card_desc">
-                                    Lorem ipsum dolor sit amet, con- <br>sectetur adipiscing elit.
-                                </p>
-                            </div>
-                            <button class="price">$34.00</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section_six">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="card_img">
-                        <img src="./img/img_chef.png" alt="">
-                    </div>
-                    <div class="card_text">
-                        <p class="card_desc">
-Lorem ipsum dolor sit amet, consectetur adipisc- <br>ing elit. Vivamus lacinia odio vitae vestibulum <br> vestibulum. 
-                        </p>
-                        <p class="card_chef_name">Chef Renatta</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section_seven">
-            <div class="wrapper">
-                <div class="container">
-                    <h1 class="card_title">Subscribe</h1>
+                <div class="card">
+                  <div class="card_img">
+                    <img src="./img/Carbonara.png" alt="" />
+                  </div>
+                  <div class="card_text">
+                    <h3 class="card_title">Carbonara</h3>
                     <p class="card_desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi- <br>vamus lacinia odio vitae vestibulum vestibulum. 
+                      Lorem ipsum dolor sit amet consectetur <br />adipisicing
+                      elit. Expedita provident alias <br />
+                      sit, blanditiis placeat eius hic ad quas mol <br />
+                      tiae ratione! Quo, corrupti praesentium.
                     </p>
-                    <form action="">
-                        <label for="email"></label>
-                        <input type="text" id="email" placeholder="Your Email">
-                        <button>subscribe</button>
-                    </form>
+                  </div>
                 </div>
+              </div>
+              <div class="card_container_two">
+                <div class="card">
+                  <div class="card_img">
+                    <img src="./img/Mie-Ciyam.png" alt="" />
+                  </div>
+                  <div class="card_text">
+                    <h3 class="card_title">Mie Ciyam</h3>
+                    <p class="card_desc">
+                      Lorem ipsum dolor sit amet consectetur <br />adipisicing
+                      elit. Expedita provident alias <br />
+                      sit, blanditiis placeat eius hic ad quas mol <br />
+                      tiae ratione! Quo, corrupti praesentium.
+                    </p>
+                  </div>
+                </div>
+                <div class="card_four">
+                  <div class="card_img">
+                    <img src="./img/Pecel Lele.png" alt="" />
+                  </div>
+                  <div class="card_text">
+                    <h3 class="card_title">Pecel Lele</h3>
+                    <p class="card_desc">
+                      Lorem ipsum dolor sit amet consectetur <br />adipisicing
+                      elit. Expedita provident alias <br />
+                      sit, blanditiis placeat eius hic ad quas mol <br />
+                      tiae ratione! Quo, corrupti praesentium.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section id="section_four">
+        <div class="container">
+          <div class="card_img"></div>
+          <div class="card_body">
+            <h2 class="card_title">Delicious Pasta</h2>
+            <p class="card_desc">
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipisicing elit. Vivamus lacinia odio vitae <br />
+              vestibulum vestibulum.
+            </p>
+            <button>ORDER NOW</button>
+          </div>
+        </div>
+      </section>
+      <section id="section_five">
+        <div class="wrapper">
+          <div class="container">
+            <h2 class="card_title">Package Menu</h2>
+            <p class="card_desc_one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-
+              <br />vamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <div class="card_container">
+              <div class="card">
+                <img src="./img/pasta+ice-tea.png" alt="" />
+                <div class="card_text">
+                  <h3 class="card_title">Pasta + Ice Tea</h3>
+                  <p class="card_desc">
+                    Lorem ipsum dolor sit amet, con- <br />sectetur adipiscing
+                    elit.
+                  </p>
+                </div>
+                <button class="price">$34.00</button>
+              </div>
+              <div class="card">
+                <img src="./img/carbonara&pasta.png" alt="" />
+                <div class="card_text_two">
+                  <h3 class="card_title">Carbonara & Pasta</h3>
+                  <p class="card_desc">
+                    Lorem ipsum dolor sit amet, con- <br />sectetur adipiscing
+                    elit.
+                  </p>
+                </div>
+                <button class="price">$34.00</button>
+              </div>
+              <div class="card">
+                <img src="./img/MieCiyamPangsit.png" alt="" />
+                <div class="card_text">
+                  <h3 class="card_title">Mie Ciyam Pangsit</h3>
+                  <p class="card_desc">
+                    Lorem ipsum dolor sit amet, con- <br />sectetur adipiscing
+                    elit.
+                  </p>
+                </div>
+                <button class="price">$34.00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_six">
+        <div class="wrapper">
+          <div class="container">
+            <div class="card_img">
+              <img src="./img/img_chef.png" alt="" />
+            </div>
+            <div class="card_text">
+              <p class="card_desc">
+                Lorem ipsum dolor sit amet, consectetur adipisc- <br />ing elit.
+                Vivamus lacinia odio vitae vestibulum <br />
+                vestibulum.
+              </p>
+              <p class="card_chef_name">Chef Renatta</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_seven">
+        <div class="wrapper">
+          <div class="container">
+            <h1 class="card_title">Subscribe</h1>
+            <p class="card_desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-
+              <br />vamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <form action="">
+              <label for="email"></label>
+              <input type="text" id="email" placeholder="Your Email" />
+              <button>subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="wrapper">
-            <div class="grid-container">
-                <div class="col1">
-                    <h4 class="card_title">About Us</h4>
-                    <p class="card_desc">
-                        Lorem ipsum dolor sit amet, consectetur adipi-<br>scing elit. Aliquam at dignissim nunc, id maxi-<br>mus ex. Etiam nec dignissim elit, at dignissim<br> enim. 
-                    </p>
-                </div>
-                <div class="col2">
-                    <div class="col">
-                        <h5 class="card_title">About</h5>
-                        <article class="about">
-                            <p>History</p>
-                            <p>Our Team</p>
-                            <p>Brand Guidelines</p>
-                            <p>Terms & Condition</p>
-                            <p>Privacy Policy</p>
-                        </article>
-                    </div>
-                    <div class="col">
-                        <h5 class="card_title">Services</h5>
-                        <article class="service">
-                            <p>How to Order</p>
-                            <p>Our Product</p>
-                            <p>Order Status</p>
-                            <p>Promo</p>
-                            <p>Payment method</p>
-                        </article>
-                    </div>
-                    <div class="col">
-                        <h5 class="card_title">Follow</h5>
-                        <article>
-                            <div class="social-network">
-                                <a href="facebook.com">
-                                    <img src="./img/icon-fb.png" alt="">
-                                </a>
-                                <p>Facebook</p>
-                            </div>
-                            <div class="social-network">
-                                <a href="twitter.com">
-                                    <img src="./img/icon-twitter.png" alt="">
-                                </a>
-                                <p>Twitter</p>
-                            </div>
-                            <div class="social-network">
-                                <a href="instagram.com">
-                                    <img src="./img/icon-instagram.png" alt="">
-                                </a>
-                                <p>Instagram</p>
-                            </div>
-                            <div class="social-network">
-                                <a href="whatsapp.com">
-                                    <img src="./img/icon-whatsapp.png" alt="">
-                                </a>
-                                <p>Whatsapp</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                
+      <div class="wrapper">
+        <div class="grid-container">
+          <div class="col1">
+            <h4 class="card_title">About Us</h4>
+            <p class="card_desc">
+              Lorem ipsum dolor sit amet, consectetur adipi-<br />scing elit.
+              Aliquam at dignissim nunc, id maxi-<br />mus ex. Etiam nec
+              dignissim elit, at dignissim<br />
+              enim.
+            </p>
+          </div>
+          <div class="col2">
+            <div class="col">
+              <h5 class="card_title">About</h5>
+              <article class="about">
+                <p>History</p>
+                <p>Our Team</p>
+                <p>Brand Guidelines</p>
+                <p>Terms & Condition</p>
+                <p>Privacy Policy</p>
+              </article>
             </div>
+            <div class="col">
+              <h5 class="card_title">Services</h5>
+              <article class="service">
+                <p>How to Order</p>
+                <p>Our Product</p>
+                <p>Order Status</p>
+                <p>Promo</p>
+                <p>Payment method</p>
+              </article>
+            </div>
+            <div class="col">
+              <h5 class="card_title">Follow</h5>
+              <article>
+                <div class="social-network">
+                  <a href="facebook.com">
+                    <img src="./img/icon-fb.png" alt="" />
+                  </a>
+                  <p>Facebook</p>
+                </div>
+                <div class="social-network">
+                  <a href="twitter.com">
+                    <img src="./img/icon-twitter.png" alt="" />
+                  </a>
+                  <p>Twitter</p>
+                </div>
+                <div class="social-network">
+                  <a href="instagram.com">
+                    <img src="./img/icon-instagram.png" alt="" />
+                  </a>
+                  <p>Instagram</p>
+                </div>
+                <div class="social-network">
+                  <a href="whatsapp.com">
+                    <img src="./img/icon-whatsapp.png" alt="" />
+                  </a>
+                  <p>Whatsapp</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

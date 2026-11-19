@@ -1,0 +1,570 @@
+/* ==========================================
+   responsive.css : site Foodie
+   À charger APRÈS style.css
+   Le design desktop reste dans style.css
+   ========================================== */
+
+/* ---------- Commun ---------- */
+.wrapper {
+    width: 100%;
+    max-width: 1244px; /* 1204px de contenu + 2 x 20px de marge */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   HEADER
+   (préfixé "header" car .card_text est aussi
+   utilisé dans les cartes des sections)
+   ========================================== */
+header .navbar {
+    margin-bottom: clamp(40px, 8vw, 92px);
+}
+
+header .card_logo {
+    margin-top: clamp(30px, 5vw, 56px);
+    margin-bottom: clamp(20px, 3vw, 39px);
+}
+
+header .card_logo img {
+    width: clamp(150px, 20vw, 208px);
+    height: auto;
+}
+
+header nav ul {
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* Bouton burger : caché sauf sur téléphone */
+.burger {
+    display: none;
+}
+
+header .card_text h1 {
+    font-size: clamp(64px, 14vw, 180px);
+    margin: 0 0 20px;
+}
+
+header .card_text p {
+    font-size: clamp(16px, 2.2vw, 23px);
+    max-width: 560px;
+    margin: 0 auto clamp(28px, 4vw, 46px);
+}
+
+header .card_text button {
+    cursor: pointer;
+    margin-bottom: clamp(50px, 8vw, 103px);
+}
+
+/* ==========================================
+   SECTION ONE (Popular)
+   ========================================== */
+#section_one .container {
+    margin-top: clamp(40px, 6vw, 72px);
+    margin-bottom: clamp(40px, 6vw, 82px);
+}
+
+#section_one .container h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    margin: 0 0 16px;
+}
+
+#section_one .container .card_desc_one {
+    font-size: clamp(16px, 2vw, 20px);
+    margin: 0 auto clamp(40px, 6vw, 79px);
+    max-width: 700px;
+}
+
+#section_one .container .card_container {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#section_one .card_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+#section_one .card_text h3 {
+    font-size: clamp(32px, 4vw, 46px);
+    margin: 0 0 10px;
+}
+
+#section_one .card_text p {
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   SECTION TWO (Our Statistic)
+   ========================================== */
+#section_two .container h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    margin-top: clamp(60px, 10vw, 150px);
+    margin-bottom: clamp(20px, 3vw, 42px);
+}
+
+#section_two .container .card_desc_one {
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 700px;
+    margin: 0 auto clamp(40px, 8vw, 112px);
+}
+
+#section_two .container .card_container {
+    flex-wrap: wrap;
+    gap: 40px 30px;
+    padding-bottom: clamp(40px, 6vw, 100px);
+}
+
+/* Les chiffres sont centrés dans le cercle (au lieu de top: -250px) */
+#section_two .card_img {
+    position: relative;
+}
+
+#section_two .card_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#section_two .container .card_container .card .card_desc {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+#section_two .container .card_container .card .card_desc .desc_one {
+    font-size: clamp(32px, 5vw, 48px);
+    padding-bottom: 12px;
+}
+
+#section_two .container .card_container .card .card_desc .desc_two {
+    font-size: clamp(24px, 3.5vw, 36px);
+}
+
+/* ==========================================
+   SECTION THREE (Our Menu)
+   ========================================== */
+#section_three .container {
+    margin-top: clamp(40px, 6vw, 72px);
+    margin-bottom: clamp(40px, 6vw, 82px);
+}
+
+#section_three .container h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    margin: 0 0 16px;
+}
+
+#section_three .container .card_desc_one {
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 700px;
+    margin: 0 auto clamp(30px, 5vw, 50px);
+}
+
+#section_three .container .card_container {
+    gap: 0 clamp(30px, 6vw, 100px);
+}
+
+#section_three .card_img {
+    flex-shrink: 0;
+}
+
+#section_three .card_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+#section_three .container .card_container .card .card_text,
+#section_three .container .card_container .card_four .card_text {
+    max-width: 340px;
+}
+
+#section_three .container .card_container .card .card_text h3,
+#section_three .container .card_container .card_four .card_text h3 {
+    font-size: clamp(26px, 3.5vw, 36px);
+}
+
+/* ==========================================
+   SECTION FOUR (Delicious Pasta)
+   ========================================== */
+#section_four .card_img {
+    width: 100%;
+    height: clamp(300px, 70vw, 974px);
+    background-size: cover;
+}
+
+#section_four .card_body {
+    margin-left: clamp(20px, 5vw, 80px);
+    margin-right: clamp(20px, 5vw, 80px);
+}
+
+#section_four .card_body .card_title {
+    font-size: clamp(40px, 6vw, 72px);
+}
+
+#section_four .card_body .card_desc {
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+/* ==========================================
+   SECTION FIVE (Package Menu)
+   ========================================== */
+#section_five .container {
+    margin-top: clamp(40px, 6vw, 72px);
+    margin-bottom: clamp(40px, 6vw, 82px);
+}
+
+#section_five h2 {
+    font-size: clamp(40px, 7vw, 72px);
+}
+
+#section_five .card_desc_one {
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: clamp(30px, 5vw, 50px);
+}
+
+#section_five .card_container {
+    flex-wrap: wrap;
+}
+
+#section_five .card {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#section_five .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#section_five .card_container h3 {
+    font-size: clamp(26px, 3vw, 36px);
+    margin-top: clamp(20px, 3vw, 40px);
+}
+
+#section_five .card_container p {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   SECTION SIX (Chef)
+   ========================================== */
+#section_six .container {
+    margin-top: clamp(40px, 6vw, 72px);
+    margin-bottom: clamp(40px, 6vw, 82px);
+}
+
+#section_six img {
+    max-width: 100%;
+    height: auto;
+}
+
+#section_six .card_text .card_desc {
+    font-size: clamp(20px, 3vw, 36px);
+    margin: clamp(24px, 4vw, 50px) auto 0;
+    max-width: 800px;
+}
+
+#section_six .card_text .card_chef_name {
+    font-size: clamp(40px, 5vw, 62px);
+}
+
+/* ==========================================
+   SECTION SEVEN (Subscribe)
+   ========================================== */
+#section_seven .container {
+    margin-top: clamp(30px, 5vw, 50px);
+    margin-bottom: clamp(50px, 8vw, 100px);
+}
+
+#section_seven .container h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    margin: 0;
+}
+
+#section_seven .container p {
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: 700px;
+}
+
+#section_seven form {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+#section_seven form input {
+    flex: 1;
+    min-width: 0;
+}
+
+#section_seven form button {
+    margin-left: 0;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer .grid-container {
+    margin-top: clamp(50px, 8vw, 100px);
+}
+
+footer .grid-container .col1 {
+    width: 100%;
+    max-width: 436px;
+}
+
+footer h4 {
+    font-size: clamp(28px, 4vw, 36px);
+}
+
+/* ==========================================
+   ÉCRANS ≤ 1100px
+   ========================================== */
+@media (max-width: 1100px) {
+    /* Section three : les 4 plats s'empilent, centrés */
+    #section_three .container .card_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    #section_three .container .card_container .card_container_one,
+    #section_three .container .card_container .card_container_two {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    #section_three .container .card_container .card_four {
+        margin: 0 0 40px;
+    }
+
+    #section_three .container .card_container .card_four .card_img {
+        margin-top: 0;
+    }
+
+    #section_three .container .card_container .card_four .card_text {
+        margin-left: 0;
+    }
+
+    /* Section five : les cartes passent à la ligne */
+    #section_five .card_container {
+        gap: 30px;
+    }
+}
+
+/* ==========================================
+   TABLETTE ≤ 992px
+   ========================================== */
+@media (max-width: 992px) {
+    #section_one .container .card_container {
+        justify-content: center;
+        gap: 40px 30px;
+    }
+
+    #section_two .container .card_container {
+        justify-content: center;
+    }
+
+    /* Footer : About Us au-dessus, les 3 colonnes en dessous */
+    footer .grid-container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    footer .grid-container .col1 {
+        max-width: 600px;
+        height: auto;
+    }
+
+    footer .grid-container .col {
+        height: auto;
+    }
+
+    footer .grid-container .col2 {
+        column-gap: 30px;
+    }
+}
+
+/* ==========================================
+   TABLETTE ≤ 768px
+   ========================================== */
+@media (max-width: 768px) {
+    header nav ul {
+        gap: 24px;
+    }
+
+    /* Section four : image au-dessus, texte en dessous */
+    #section_four .container {
+        grid-template-columns: 1fr;
+    }
+
+    #section_four .card_img {
+        height: clamp(250px, 60vw, 450px);
+    }
+
+    #section_four .card_body {
+        margin: 0 20px;
+        padding: 40px 0 50px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   MOBILE ≤ 600px
+   ========================================== */
+@media (max-width: 600px) {
+    /* ----- Menu burger ----- */
+    header .navbar {
+        position: relative;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .burger span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: white;
+        border-radius: 3px;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* Le burger devient une croix quand le menu est ouvert */
+    .burger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.open {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        padding: 8px 0;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    /* ----- Cartes et sections ----- */
+    #section_one .container .card_container,
+    #section_two .container .card_container,
+    #section_five .card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section_one .card_img img,
+    #section_two .card_img img {
+        width: 260px;
+    }
+
+    #section_five .card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    /* Section three : image au-dessus du texte */
+    #section_three .container .card_container .card,
+    #section_three .container .card_container .card_four {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section_three .container .card_container .card .card_img,
+    #section_three .container .card_container .card_four .card_img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #section_three .container .card_container .card .card_text,
+    #section_three .container .card_container .card_four .card_text {
+        text-align: center;
+    }
+
+    /* Footer : 2 colonnes */
+    footer .grid-container .col2 {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+/* ==========================================
+   PETIT MOBILE ≤ 480px
+   ========================================== */
+@media (max-width: 480px) {
+    header .card_text button {
+        padding: 10px 36px;
+    }
+
+    #section_seven form input {
+        font-size: 14px;
+    }
+
+    #section_seven form button {
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+/* ==========================================
+   TRÈS PETIT ≤ 380px
+   ========================================== */
+@media (max-width: 380px) {
+    footer .grid-container .col2 {
+        grid-template-columns: 1fr;
+    }
+}
